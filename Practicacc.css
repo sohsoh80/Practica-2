@@ -1,0 +1,142 @@
+html {
+    box-sizing: border-box;
+    
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    grid-template-rows: 2fr 8fr;
+    gap: 5px;
+  }
+
+  .nav {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column: 1 / span 2;
+    grid-template-columns: 3fr 7fr;
+  }
+
+
+  .item-Navegaxpagina {
+    font-size: 150%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 15fr 5fr;
+  }
+
+  .item-left{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(95, 95, 95);
+    font-size: 180%;
+}
+
+.item-right {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column: 1 / span 2;
+    grid-row: 2 /span 3;
+    grid-template-columns: 3fr 7fr;
+    margin-top: 20px;
+  }
+
+  .labase {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 3fr 7fr;
+  }
+
+
+  .item-izq {
+    display: grid;
+        grid-template-columns: repeat(3, 215px);
+        grid-template-rows: repeat(3, 215px);
+        height: 644px;
+}
+
+.item-buso, .item-modelo {
+    width: 430px;
+    height: 430px;
+    }
+
+
+    .item-buso {
+        grid-column: 1 / span 3;
+      grid-row: 1 / span 3;
+      height: 430px;
+      width: 430px;
+      z-index: -1;
+    }
+
+    .item-modelo {
+        grid-column: 2 / span 4;
+      grid-row: 2 / span 4;
+      height: 430px;
+      width: 430px;
+    }
+
+    .item-derechita {
+        display: grid;
+      grid-auto-flow: column;
+      grid-column:2/span 3;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+
+
+    .general {
+        display: grid;
+        grid-auto-flow: column;
+        grid-column: 1/ span 3;
+        grid-row: 1/ span 2;
+      }
+  
+      .item-dcion_gral{
+        text-align: center;
+        margin-right: 10%;
+        margin-top: 5%;
+        font-size: 230%;
+      }
+  
+      .dcion_producto {
+        grid-column: 1/span 2;
+        grid-row: 2/ span 4;
+        margin-left: 20%;
+        font-size: 110%;
+        text-align: justify;
+      }
+  
+      .item-title_productos {
+        margin-top: 23%;
+      }
+  
+      .button_vermas {
+        width: 200px;
+        height: 60px;
+        margin-top: 3%;
+        border-radius: 24px;
+        background-color: rgb(20, 6, 83);
+        color: cornsilk;
+      }
+  
+      .item-fondoamar {
+        grid-column: 2/span 5;
+        grid-row: 2/ span 4;
+        z-index: -1;
+        height: 420px;
+        width: 1260px;
+      }
